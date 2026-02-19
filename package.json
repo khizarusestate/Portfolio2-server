@@ -1,0 +1,13 @@
+{
+  "name": "backand",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "nodemailer": "^6.10.1"
+  }
+}
