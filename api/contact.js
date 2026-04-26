@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer')
 
 module.exports = async function handler(req, res) {
-  const configuredOrigin = (process.env.CORS_ORIGIN || 'https://sofengkhizar.vercel.app/').replace(/\/$/, '')
+  const configuredOrigin = (process.env.CORS_ORIGIN).replace(/\/$/, '')
   const allowedOrigins = [configuredOrigin, `${configuredOrigin}/`]
   const requestOrigin = req.headers.origin || ''
   const originToUse = allowedOrigins.includes(requestOrigin) ? requestOrigin : configuredOrigin
